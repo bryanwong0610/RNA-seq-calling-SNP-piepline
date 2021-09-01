@@ -7,4 +7,4 @@ STAR --runThreadN 6 --runMode genomeGenerate \ --genomeDir /home/bryan0610/refer
 --genomeFastaFiles \ /home/bryan0610/reference/Homo_sapiens.GRCh38.dna.primary_assembly.fa 
 --sjdbGTFfile \ /home/bryan0610/reference/Homo_sapiens.GRCh38.99.gtf --sjdbOverhang 99
 # 2nd mapping protocol
-see as mapping.sh
+Refer to the key commands in the demo file mapping.sh
