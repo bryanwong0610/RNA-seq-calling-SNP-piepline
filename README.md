@@ -176,14 +176,8 @@ The annotation of VCF file which calling by GATK in RNA-seq situation.
               JLZP_counts = read.csv(file = 'gene_counts_all.csv')
               ctrl_counts = read.csv(file = 'ctrl_MII_GV.csv')
               gene_counts_De_data = merge(JLZP_counts,ctrl_counts,by = "gene_id")
-              colnames(gene_counts_De_data) = c("gene_id","SYMBOL","Oocyte_1","Oocyte_2",
-                                   "GV_1","GV_2","MI_1","MI_2","MII_1",
-                                   "Ctrl_MII_1","Ctrl_MII_2","Ctrl_MII_3",
-                                   "Ctrl_MII_4","Ctrl_MII_5","Ctrl_MII_6",
-                                   "Ctrl_MII_7","Ctrl_MII_8","Ctrl_MII_9",
-                                   "Ctrl_GV_1","Ctrl_GV_2","Ctrl_GV_3","Ctrl_GV_4"
-                                   ,'Ctrl_GV_5',"Ctrl_GV_6","Ctrl_GV_7","Ctrl_GV_8"
-                                   ,"Ctrl_GV_9","Ctrl_GV_10")
+              colnames(gene_counts_De_data) = c("gene_id","SYMBOL",gruop
+                                   )
               rownames(gene_counts_De_data) <- gene_counts_De_data[,1]
               gene_counts_De_data_1 <- gene_counts_De_data[,-1]
               gene_counts_De_data_1 <- gene_counts_De_data_1[,-1]
